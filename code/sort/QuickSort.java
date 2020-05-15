@@ -19,7 +19,7 @@ public class QuickSort {
         if(left < right) {
             int pivot = partition(array, left, right);
             
-            // partition을 돌리고 난 이후 완벽하게 pivot은 고정이 됨
+            // partition을 돌리고 난 이후 완벽하게 pivot은 고정이 됨 => 나보다 작은 것은 왼쪽. 나보다 큰 것은 오른쪽에 있음이 명확함
             quicksort(array, left, pivot - 1);
             quicksort(array, pivot + 1, right);
         }
